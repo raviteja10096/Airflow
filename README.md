@@ -1,11 +1,19 @@
 # Airflow
+![image](https://github.com/raviteja10096/Airflow/assets/33113373/616ab9f8-5782-4179-b13d-e9a1a131186a)
+
 ## Contents
 - Introduction
 - Installing Airflow
+- Running Docker Compose
+- Interacting with Airflow UI
 
 ### About Airflow:
 
 Airflow is a popular tool that simplifies the complex workflow. It allows you to programmatically define, schedule, and monitor your workflows, all in one place. While Airflow is a powerful option, installation can sometimes feel overwhelming. This guide will break down the setup process into two easy-to-follow methods, getting you up and running with Airflow in no time.
+
+**Sample Airflow UI:**
+![image](https://github.com/raviteja10096/Airflow/assets/33113373/54f4ffde-96ce-4d5b-9bac-3f4bc969f7a7)
+
 
 This guide will focus on installing Airflow using Docker/podman. To follow along, make sure you have Docker Desktop up and running on your machine.
 
@@ -56,11 +64,27 @@ Once we have all the setup we can run the docker compose file using below comman
 
  ```docker-compose up airflow-init```
 
+ ![image](https://github.com/raviteja10096/Airflow/assets/33113373/0f8ab18b-446e-400a-a4b5-b77eada33e22)
+
+ 
+  ```docker compose up -d```
+  ![image](https://github.com/raviteja10096/Airflow/assets/33113373/4da11f4d-42ec-4fb7-bdb5-630cf119bbaa)
+
+
 #### Login into Airflow:
 Once you see all the containers up and running you can open localhost:8080 in browser and login to airflow with admin creds
 
-Username : admin
+Username : airflow
 Password :  airflow
 
+![image](https://github.com/raviteja10096/Airflow/assets/33113373/82c43f3f-6c82-46d2-98d4-79da627a9ede)
+
+
+![image](https://github.com/raviteja10096/Airflow/assets/33113373/01fc22e0-14f2-45f2-9c3d-2bd56f5fbfa6)
+
+
  We've successfully installed the full version of Airflow in just a few minutes using Docker.
+ 
+ ![image](https://github.com/raviteja10096/Airflow/assets/33113373/a88309a7-c6be-49f1-8156-d7aa7277e6b0)
+
 
