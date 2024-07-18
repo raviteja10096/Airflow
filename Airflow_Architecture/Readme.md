@@ -32,7 +32,7 @@ Apache Airflow is an open-source platform designed for orchestrating complex dat
 𝗘𝘅𝗲𝗰𝘂𝘁𝗼𝗿 ⚙️: The Executor’s primary role involves executing tasks actively. It interacts with the Scheduler to obtain task details and initiates the required processes or containers for task execution.
 
 Airflow offers various Executor types like LocalExecutor, CeleryExecutor, and KubernetesExecutor, each tailored to specific infrastructure setups and operational needs.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Airflow%20Arch%20New%20Updated.gif)
+![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_executor.gif)
 
 𝗪𝗼𝗿𝗸𝗲𝗿 👷:The Worker is a component that performs the tasks assigned by the Executor. Depending on the chosen Executor, it can be a separate process or container. Workers are responsible for executing the actual code or scripts defined in your tasks and reporting their status back to the Executor.
 ![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Worker.gif)
