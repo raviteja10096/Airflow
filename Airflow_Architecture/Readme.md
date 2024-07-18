@@ -24,22 +24,26 @@ Apache Airflow is an open-source platform designed for orchestrating complex dat
 ### Components:
 
 𝗪𝗲𝗯 𝗦𝗲𝗿𝘃𝗲𝗿 🌐: Airflow UI where you can monitor, and manage DAGs, Variables, connections and check the logs. It provides a dashboard that helps you visualize your data workflows, check their progress, and troubleshoot any issues.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Webserver.gif)
+<img src="https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Webserver.gif" width=70% height=70%>
 
 𝗦𝗰𝗵𝗲𝗱𝘂𝗹𝗲𝗿 🕰️: It is responsible for managing the execution of tasks. It monitors the DAGs and schedules tasks to run based on their dependencies and timing configurations. It makes sure that tasks are executed in the right order and at the right time.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Scheduler.gif)
+<img src="https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Scheduler.gif" width=70% height=70%>
 
 𝗘𝘅𝗲𝗰𝘂𝘁𝗼𝗿 ⚙️: The Executor’s primary role involves executing tasks actively. It interacts with the Scheduler to obtain task details and initiates the required processes or containers for task execution.
 
 Airflow offers various Executor types like LocalExecutor, CeleryExecutor, and KubernetesExecutor, each tailored to specific infrastructure setups and operational needs.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_executor.gif)
+
+<img src="https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_executor.gif" width=70% height=70%>
 
 𝗪𝗼𝗿𝗸𝗲𝗿 👷:The Worker is a component that performs the tasks assigned by the Executor. Depending on the chosen Executor, it can be a separate process or container. Workers are responsible for executing the actual code or scripts defined in your tasks and reporting their status back to the Executor.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Worker.gif)
+
+<img src="https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_Worker.gif" width=70% height=70%>
+
 
 𝗠𝗲𝘁𝗮𝗱𝗮𝘁𝗮 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 🛢: This is where Airflow keeps track of all your workflows, including details about the tasks you’ve set up and how they’ve run in the past. It’s like a central hub for storing and organizing everything related to your scheduled tasks. This helps you keep an eye on how things are progressing and troubleshoot any issues that might come up. Airflow gives you the flexibility to use different databases like PostgreSQL, MySQL, or SQLite to store this information, depending on what works best for your setup.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_MetadataBase.gif)
+
+<img src="https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_MetadataBase.gif" width=70% height=70%>
+
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗕𝗿𝗼𝗸𝗲𝗿 ✉︎ ✉︎ ✉︎(𝗼𝗽𝘁𝗶𝗼𝗻𝗮𝗹): In setups where the CeleryExecutor is used for distributing tasks, a message broker plays a crucial role. This broker, like RabbitMQ or Redis, acts as a middleman between the Scheduler and the Workers. It ensures smooth communication by passing task details from the Scheduler to the Workers, ensuring tasks are executed reliably and efficiently across the distributed system.
-![image](https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_message_Broker.gif)
-
+<img src="https://github.com/raviteja10096/Airflow/blob/main/Airflow_Architecture/Component%20GIFS/Airflow_message_Broker.gif" width=70% height=70%>
